@@ -75,6 +75,7 @@ class Tenor {
     MediaFilter mediaFilter = MediaFilter.minimal,
     String anon_id = '',
     bool canRegisterShare = false,
+    int pos =null
   }) async {
     var keys = '?key=$apiKey&locale=$language&q=$search';
 
@@ -92,7 +93,7 @@ class Tenor {
       contentFilter: contentFilter,
       size: size,
       mediaFilter: mediaFilter,
-      pos: null,
+      pos: pos,
     );
   }
 
